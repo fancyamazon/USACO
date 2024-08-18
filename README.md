@@ -7,11 +7,5 @@ Organized into "Bronze", "Silver", "Gold". I've done lots of problems that aren'
 
 CURRENT LEVEL: **Gold**
 
-==
-awd
-
--- awd
-
-awd
-
+## awd
 # Progress 
