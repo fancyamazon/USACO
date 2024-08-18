@@ -42,6 +42,8 @@ bool debug = true; // if(debug) cout << "debug statement" << endl;
 #define db(x) if(debug) cout << (#x) << ": " << x << endl; // print `x` info
 #define dbp(x, y) if(debug) cout << "{" << (#x) << ", " << (#y) << "}: {" << x << ", " << y << "};\n"; // print pair `x`,`y` info
 #define dba(arr) if(debug) { cout << (#arr) << ": \n"; for(int i = 0; i < arr.size(); i++) cout << arr[i] << " "; cout << "\n"; } // print array info
+#define dbap(arr) if(debug) { cout << (#arr) << ": \n"; for(int i = 0; i < arr.size(); i++) cout << "{" << arr[i].first << ", " << arr[i].second << "} "; cout << "\n"; } // print array of pairs
+#define dbaa(arr) if(debug) { cout << (#arr) << ": \n"; for(int i = 0; i < arr.size(); i++) { for(int &t : arr[i]) cout << t << " "; cout << "\n"; } cout << "\n"; } // print 2D array
 #define cm << ", " <<
 #define sp << " " <<
 
@@ -52,10 +54,12 @@ struct {
     }
 } in;
 
+/* 
 const int MAX_N = 1717; // maximum value N can take
 const ll MOD = 998244353; // change if necessary
+ll grid[MAX_N][MAX_N]; // */
 
-ll n, k, grid[MAX_N][MAX_N];
+ll n, k;
 
 void solve() {
     cin >> n >> k;
