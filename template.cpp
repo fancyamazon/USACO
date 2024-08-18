@@ -43,7 +43,7 @@ bool debug = true; // if(debug) cout << "debug statement" << endl;
 #define dbp(x, y) if(debug) cout << "{" << (#x) << ", " << (#y) << "}: {" << x << ", " << y << "};\n"; // print pair `x`,`y` info
 #define dba(arr) if(debug) { cout << (#arr) << ": \n"; for(int i = 0; i < arr.size(); i++) cout << arr[i] << " "; cout << "\n"; } // print array info
 #define dbap(arr) if(debug) { cout << (#arr) << ": \n"; for(int i = 0; i < arr.size(); i++) cout << "{" << arr[i].first << ", " << arr[i].second << "} "; cout << "\n"; } // print array of pairs
-#define dbaa(arr) if(debug) { cout << (#arr) << ": \n"; for(int i = 0; i < arr.size(); i++) { for(int &t : arr[i]) cout << t << " "; cout << "\n"; } cout << "\n"; } // print 2D array
+#define dbaa(arr) if(debug) { cout << (#arr) << ": \n"; for(int i = 0; i < arr.size(); i++) { for(auto t : arr[i]) cout << t << " "; cout << "\n"; } cout << "\n"; } // print 2D array
 #define cm << ", " <<
 #define sp << " " <<
 
